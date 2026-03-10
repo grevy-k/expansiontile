@@ -58,6 +58,23 @@ class HelpCenterScreen extends StatelessWidget {
             ),
           ),
 
+          SizedBox(height: 10),
+
+          Card(
+            child: ExpansionTile(
+              leading: Icon(Icons.assignment),
+              title: Text('How do I submit assignments?'),
+              initiallyExpanded: true,
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(16),
+                  child: Text(
+                    'Submit your work through Canvas before the deadline.',
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
